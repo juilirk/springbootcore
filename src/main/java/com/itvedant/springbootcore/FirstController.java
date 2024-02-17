@@ -26,6 +26,7 @@ public class FirstController {
     @RequestMapping("/")
     public String home(){
         System.out.println("Home Method Called");
+        System.out.println("Dependency Injection");
         s.print();
         e.getSalary();
         return "homepage.html";
@@ -35,5 +36,9 @@ public class FirstController {
     public String about(){
         System.out.println("about method called");
         return "aboutus.html";
+    }
+
+    public String contactUs(){
+        return null;
     }
 }
